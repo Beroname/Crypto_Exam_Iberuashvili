@@ -1,0 +1,29 @@
+
+What I Found:
+
+1. CERTIFICATES:
+   - Website has a certificate from site
+   - It's verified by a certificate authority
+
+2. ENCRYPTION:
+   - TLS Version: (put what you found from openssl)
+   - Cipher: (put what you found from openssl)
+
+3. WHAT TLS DOES:
+
+   Privacy (Confidentiality):
+   - TLS scrambles messages so only you and website can read them
+   - Like talking in secret code
+
+   Safety (Integrity):
+   - TLS checks if messages were changed during sending
+   - Like sealed envelopes that show if opened
+
+4. WHAT I SAW IN WIRESHARK:
+   - Client Hello: My computer said hello to website
+   - Server Certificate: Website showed its ID card
+   - Key Exchange: They agreed on a secret code
+
+Files I Have:
+- openssl_screenshot.png
+- wireshark_screenshot.png
