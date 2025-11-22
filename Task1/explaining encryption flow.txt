@@ -1,0 +1,48 @@
+Step 1: Making the Special Keys
+First, User A makes two special keys:
+
+Public Key: Like a lock that anyone can use to lock things
+
+Private Key: Like the key that only User A has to unlock things
+
+Step 2: Sending a Secret Message
+When User B wants to send a secret message:
+
+Make a Secret Code: The program creates a random secret code (AES key)
+
+Lock the Message: Use the secret code to lock the actual message
+
+Lock the Secret Code: Use User A's public lock to lock the secret code itself
+
+Send Both: Send the locked message and locked secret code to User A
+
+Step 3: Reading the Secret Message
+When User A gets the message:
+
+Unlock the Secret Code: Use their private key to unlock the secret code
+
+Unlock the Message: Use the secret code to unlock the actual message
+
+Read It: Now they can read the original message!
+
+Why We Use Two Locks?
+We use both AES and RSA because:
+
+AES is really fast for locking big messages
+
+RSA is really good for safely sharing secret codes
+
+Together they work perfectly!
+
+Files Our Program Makes:
+message.txt - The original message before locking
+
+encrypted_message.bin - The locked message (looks like garbage)
+
+aes_key_encrypted.bin - The locked secret code
+
+decrypted_message.txt - The unlocked message (same as original)
+
+public_key.pem - User A's lock (safe to share with everyone)
+
+private_key.pem - User A's key (KEEP THIS SECRET!)
