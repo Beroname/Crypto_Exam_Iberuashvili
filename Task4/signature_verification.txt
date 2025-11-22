@@ -1,0 +1,19 @@
+How Digital Signatures Work:
+
+1. SIGNING (Alice):
+   - Alice creates a unique fingerprint of her message using SHA-256
+   - She encrypts this fingerprint with her private key (this is the signature)
+   - Only Alice can do this because only she has the private key
+
+2. VERIFYING (Bob):
+   - Bob gets the message and signature from Alice
+   - He decrypts the signature using Alice's public key to get the fingerprint
+   - He also creates his own fingerprint of the message using SHA-256
+   - If both fingerprints match, it proves:
+     * Alice sent the message (authentication)
+     * Message wasn't changed (integrity)
+
+It's like a wax seal:
+- Only Alice has the seal stamp (private key)
+- Anyone can recognize Alice's seal (public key)
+- If seal is broken, someone tampered with the message
