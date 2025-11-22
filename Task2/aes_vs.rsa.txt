@@ -1,0 +1,17 @@
+AES (Advanced Encryption Standard)
+Type: Symmetric encryption (same key to lock and unlock)
+
+Speed: Very fast
+
+Use: Good for encrypting large files
+
+Security: Very strong, used by governments
+
+RSA (Rivest-Shamir-Adleman)
+Type: Asymmetric encryption (different keys to lock and unlock)
+
+Speed: Slow
+
+Use: Good for sharing secret keys
+
+Security: Strong, but needs long keys
